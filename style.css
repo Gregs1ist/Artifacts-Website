@@ -1,11 +1,17 @@
 body {
-    background: white;
-  }
-  p {
-    color: black;
-  }
- 
-  h1{
-    text-decoration: underline;
-  }
+  background: white;
+}
+
+p {
+  color: black;
+}
+
+img {
+  width: 200; 
+  height: 200;
+}
+
+h1{
+  text-decoration: underline;
+}
   
