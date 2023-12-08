@@ -1,20 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Saira+Extra+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Saira+Extra+Condensed:wght@300&display=swap');
+:root {
+  --width: 600px;
+}
+
 body {
   background: white;
+  padding: 0;
+  margin: 0;
 }
 
 p {
   color: black;
   text-align: center;
+  font-size: 10px;
 }
 
 img {
-  width: 200px; 
-  height: 200px;
-  padding-left: auto;
-  padding-right: auto;
+  width: var(--width);
+  height: var(--width);
+  padding-left: calc(50% - var(--width)/2);
 }
 
 h1{
+  vertical-align: top;
+  text-align: left;
+  padding-left: 2.5%;
+}
+
+h1{
+  color:white;
   text-decoration: underline;
   text-align: center;
-  font-size: 60px;}
+  font-size:40px;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  position: fixed;
+  top: 0;
+  left:0; 
+}
+
+div{
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: grey;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li{
+  padding-left: 10%;
+  float: left;
+  width: 200px;
+  height: 60px;
+  background-color: gray;
+  opacity: .9;
+  line-height: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+ul li a:hover{
+  background-color:#484b6a;
+}
+
+
+ul li ul li{
+  display: none;
+}
+
+ul li:hover ul li{
+  display: block;
+}
