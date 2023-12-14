@@ -1,86 +1,234 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Saira+Extra+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Saira+Extra+Condensed:wght@300&display=swap');
-:root {
-  --width: 600px;
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(musuem.png);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
 }
 
-body {
-  background: white;
-  padding: 0;
-  margin: 0;
+.navbar {
+ height: 12%;
+ width: 100%;
+ display: flex;
+ align-items: center;
+}
+
+.logo {
+  width: 50px;
+  cursor: pointer;
+}
+
+.menu-icon {
+width: 30px;
+cursor: pointer;
+margin-left: 40px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+
+}
+
+nav ul li a {
+text-decoration: none;
+color: #fff;
+font-size: 13px;
+}
+
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.col {
+  flex-basis: 50%;
+}
+
+h2 {
+color: #fff;
+font-size: 60px;
 }
 
 p {
-  color: black;
-  text-align: center;
-  font-size: 10px;
+  color: #fff;
+  font-size: 11px;
+  line-height: 15px;
 }
 
-img {
-  width: var(--width);
-  height: var(--width);
-  padding-left: calc(50% - var(--width)/2);
+.card {
+  width: 500px;
+  height: 330px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-image: url(temple\ of\ solomon.jpg);
+background-position: center;
+background-size: cover;
 }
 
-h1{
-  vertical-align: top;
-  text-align: left;
-  padding-left: 2.5%;
+.card2 {
+  width: 500px;
+  height: 330px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-image: url(ziggurat.jpg);
+background-position: center;
+background-size: cover;
 }
 
-h1{
-  color:white;
-  text-decoration: underline;
-  text-align: center;
-  font-size:40px;
-  font-family: 'Saira Extra Condensed', sans-serif;
-  position: fixed;
-  top: 0;
-  left:0; 
+.card3 {
+  width: 500px;
+  height: 330px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-image: url(colosseum.jpg);
+background-position: center;
+background-size: cover;
 }
 
-div{
-  width: 100%;
-  height: 8%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: grey;
-}
-ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-ul li{
-  padding-left: 10%;
-  float: left;
-  width: 200px;
-  height: 60px;
-  background-color: gray;
-  opacity: .9;
-  line-height: 40px;
-  text-align: center;
-  font-size: 30px;
-  font-family: 'Roboto', sans-serif;
+.card4 {
+  width: 500px;
+  height: 330px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-image: url(Great\ Wall\ of\ China.jpg);
+background-position: center;
+background-size: cover;
 }
 
-ul li a{
-  text-decoration: none;
+.card5 {
+  width: 500px;
+  height: 330px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-image: url(parthenon.jpg);
+background-position: center;
+background-size: cover;
+}
+
+h1 {
+  color: #fff;
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dropbtn {
   color: white;
-  display: block;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
 }
 
-ul li a:hover{
-  background-color:#484b6a;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-
-ul li ul li{
+.dropdown-content {
   display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-ul li:hover ul li{
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
 }
+
+.dropdown-content a:hover {background-color: gray;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: none;}
+
+h3 {
+  color: white;
+  font-size: 95px; 
+  position: center;
+  padding: auto;
+  padding-left: 20%;
+  padding-top: 0%;
+}
+
+.container2 {
+  width: 100%;
+  height: 250vh;
+  object-fit: fill;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(musuem.png);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+p1 {
+font-size: 15px;
+color: #fff;
+padding-left: 1%;
+padding-top: 4.75%;
+position: fixed;
+bottom: 0;
+left:0;
+}
+
+.headerbox {
+  width: 320px;
+  height: 50px;
+  color: gray;
+  opacity: 100%;
+
+}
+
+
+p.a {
+  text-indent: 15px;
+}
+
